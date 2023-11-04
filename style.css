@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+.nav-logo {
+    max-width: 100px;
+}
+
+img {
+    width: 100%;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.link a{
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: #333;
+    
+}
+
+.link a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: orangered;
+    transition: all 0.3s ease;
+}
+
+.link a:hover::after {
+    width: 70%;
+}
+
+.container .content {
+    max-width: 100px;
+}
+
+.header .image {
+    max-width: 1200px;
+    position: middle;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    position: relative;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+.contener{
+    display: flex;
+}
+.sub-header {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    color: #333;
+}
+
+.pricing {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.pricing .card {
+    padding: 3rem 2rem;
+    background-color: salmon;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.pricing .card:hover {
+    background-color: orangered;
+    border-color: #333;
+}
+
+.pricing .card .content {
+    flex: 1;
+    margin-bottom: 2rem;
+}
+
+.pricing .card h4 {
+    margin-bottom: 1rem;
+    color: #333;
+    font-size: 2rem;
+    font-weight: 600;
+    position: relative;
+    
+}
+
+.pricing .card h3 {
+    color: #fff;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+    border-bottom: 2px dashed #333;
+}
+
+.pricing .card p {
+    color: #333;
+    margin-bottom: 1.75rem;
+}
+
+.pricing .card p i {
+    color: aquamarine;
+    font-size: 1.5rem;
+    margin-right: 5rem;
+}
+
+.pricing .card .bth, a:link, a:visited {
+    color: #333;
+    background-color: transparent;
+    border: 2px;
+    padding: 1rem 2rem;
+    text-align: center;
+    font-size: large;
+    
+}
+
+.pricing .card .bth:hover {
+    background-color: #fff;
+    color: orangered;
+}
+
+.container .about_img{
+    max-width: 960px;
+    margin: 0 auto;
+    border: 1px solid #fff;
+}
+
+.hero-con {
+    display: flex;
+    background-color: #e5e5e5;
+    justify-content: center;
+
+}
+
+.hero-info {
+    width: 100%;
+    padding: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-info h3{
+    font-size: 2.5rem;
+}
+
+.hero-info p{
+    font-size: 1.5rem;
+    margin: 2rem 0;
+    padding: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-img img{
+    width: 100%;
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+.hero-info h3{
+    font-size: 2.5rem;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.container .header {
+    font-size: 2.5rem;
+    display: flex;
+    margin: 2rem 0;
+    padding: 5rem;
+    justify-content: center;
+}
+
+.skill {
+    padding: 5rem 0 2.5rem 0;
+}
+.skill > .text {
+    width: 70%;
+    margin: 1.5rem auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.skill .row {
+    margin: 1rem 0;
+}
+
+.skill .item {
+    padding: 0.5rem 0;
+    margin: 0.3rem 0;
+}
+
+.skill .item-text {
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 600;
+    font-size: 18px;
+    position: relative;
+}
+
+.skill .item-text span:last-child {
+    position: absolute;
+}
+
+.skill .item-text .w-90 {
+    margin-left: 85%;
+}
+.skill .item-text .w-75 {
+    margin-left: 70%;
+}
+.skill .item-text .w-60 {
+    margin-left: 55%;
+}
+.skill .item-text .w-80 {
+    margin-left: 75%;
+}
+.skill .item-text .w-77 {
+    margin-left: 72%;
+}
+.skill .item-text .w-68 {
+    margin-left: 63%;
+}
+
+.progress {
+    margin: 0.8rem 0;
+    border-radius: 10px;
+    height: 16px;
+    width: 100%;
+    background-color: gray;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background-color: salmon;
+    height: 100%;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+.progress-bar.w-90 {
+    width: 90%;
+}
+.progress-bar.w-75 {
+    width: 75%;
+}
+.progress-bar.w-60 {
+    width: 60%;
+}
+.progress-bar.w-80 {
+    width: 80%;
+}
+.progress-bar.w-77 {
+    width: 77%;
+}
+.progress-bar.w-68 {
+    width: 68%;
+}
+
+.contact .img {
+    max-width: 100px;
+    float: left;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    margin-right: 15px;
+
+}
+
+.container .wrapper .img {
+    max-width: 150px;
+    float: left;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.wrapper {
+    margin: 150px auto;
+    width: 70%;
+}
+
+.text-box {
+    color: #333;
+}
+
+.container .header{
+    justify-content: center;
+}
+
+.hero-info {
+    width: 250%;
+    padding: 9rem;
+}
+
+.hero-img img{
+    width: 100%;
+    padding: 2rem;
+}
+
+.hero-info h3{
+    font-size: 2.5rem;
+}
+
+.hero-info p{
+    margin: 1rem 0;
+}
+
+.contact-con{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5rem;
+}
+
+.contact-title{
+    margin: 2rem 0;
+}
+
+.contact-item  img{
+    width: 100%;
+    border: 3px solid #fff;
+
+}
+
+.contact-item p{
+    margin: 1rem;
+    font-size: 15px;
+}
+
+.contact-item img{
+    border: 2.5px solid #e5e5e5;
+    width: 50px;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    column-gap: 7rem;
+    padding-top: 2.5rem;
+}
+
+.title .column{
+    padding-top: 7rem;
+    position: relative;
+    gap: 2rem;
+    text-align: center;
+    color: #333;
+    font-size: 2.5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row {
+    padding-top: 4rem;
+}
+
+.contact-title .contact-text{
+    padding-top: 7rem;
+    position: relative;
+    gap: 2rem;
+    text-align: center;
+    color: #333;
+    font-size: 2.5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contant-con .contact-item p{
+    font-size: 9rem;
+    font-weight: 1000;
+    padding: 0.5rem;
+}
+
+.contact .container{
+    background-color: #e5e5e5;
+    justify-content: center;
+    align-content: center;
+}
+
+.contact-item p{
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    column-gap: 20px;
+}
+
+.contact-item img{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.contact-item p{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+    padding-top: 1rem;
+}
